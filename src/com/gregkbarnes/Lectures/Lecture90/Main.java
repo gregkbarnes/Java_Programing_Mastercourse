@@ -49,8 +49,9 @@ public class Main {
         case 4:
           myPhone.removeContact();
           break;
-        default:
+        case 5:
           done = true;
+        default:
           break;
       }
     }
@@ -61,6 +62,7 @@ public class Main {
     System.out.println("2 - Store");
     System.out.println("3 - Modify");
     System.out.println("4 - Remove");
+    System.out.println("5 - Exit");
     System.out.print("Enter your choice: ");
   }
 }

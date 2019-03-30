@@ -59,7 +59,7 @@ public class MobilePhone {
     }
   }
 
-  public void removeContact() {
+  public boolean removeContact() {
     System.out.println("Enter the contact you wish to remove: ");
     String choice = scanner.nextLine();
     int choiceIndex = findName(choice);
@@ -67,7 +67,10 @@ public class MobilePhone {
     if (choiceIndex >= 0) {
       this.contacts.remove(choiceIndex);
       System.out.println("Contact removed.");
+      return true;
     }
+
+    return false;
   }
 
   public void printContacts() {
